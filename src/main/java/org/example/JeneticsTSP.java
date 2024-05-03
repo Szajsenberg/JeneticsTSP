@@ -114,7 +114,7 @@ public class JeneticsTSP extends JFrame {
                 .builder(
                         JeneticsTSP::eval,
                         Codecs.ofPermutation(CitiesListX.size()))
-                .optimize(Optimize.MAXIMUM)
+                .optimize(Optimize.MINIMUM)
                 .maximalPhenotypeAge(10)
                 .populationSize(1000)
                 .build();
